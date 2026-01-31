@@ -74,10 +74,10 @@ export const AmortizationSchedule: React.FC = () => {
                                         <div className="summary-value">{result.summary.totalInterest.toLocaleString(undefined, { maximumFractionDigits: 2 })}</div>
                                         <div className="summary-label">Total Interest</div>
                                     </div>
-                                    <div className="summary-card glass-panel">
+                                    {/* <div className="summary-card glass-panel">
                                         <div className="summary-value">{result.summary.finalBalance.toLocaleString(undefined, { maximumFractionDigits: 2 })}</div>
                                         <div className="summary-label">Final Balance</div>
-                                    </div>
+                                    </div> */}
                                 </div>
 
                                 <div className="glass-panel" style={{ padding: '1rem', overflowX: 'auto' }}>
