@@ -1,0 +1,143 @@
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: var(--sidebar-width);
+  background: var(--color-bg-secondary);
+  border-right: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  position: fixed;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.sidebar-header {
+  margin-bottom: 2rem;
+  color: var(--color-accent);
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.nav-item {
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  color: var(--color-text-muted);
+  background: transparent;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  transition: all var(--transition-speed);
+  font-family: var(--font-family);
+}
+
+.nav-item:hover {
+  color: var(--color-text-main);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.nav-item.active {
+  background: var(--color-accent);
+  color: white;
+  box-shadow: 0 4px 12px var(--color-accent-glow);
+}
+
+/* Main Content */
+.main-content {
+  margin-left: var(--sidebar-width);
+  flex: 1;
+  padding: 3rem;
+  max-width: 1000px;
+  /* Centered content max-width */
+  margin-right: auto;
+}
+
+.page-header {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 1rem;
+}
+
+.page-title {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.025em;
+}
+
+.page-subtitle {
+  color: var(--color-text-muted);
+}
+
+/* Calculator Layout */
+.calculator-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.input-panel {
+  width: 100%;
+  max-width: 600px;
+}
+
+.result-panel {
+  min-height: 200px;
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--color-text-main);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.summary-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.summary-card {
+  padding: 2rem 1.5rem;
+  text-align: left;
+  background: var(--color-bg-secondary);
+  border: none;
+  /* Flat look for cards */
+  box-shadow: none;
+}
+
+.summary-value {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--color-text-main);
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.05em;
+}
+
+.summary-label {
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
