@@ -34,6 +34,9 @@ export const Sidebar: React.FC<SidebarProps> = ({ currentTab, onTabChange }) => 
                     );
                 })}
             </nav>
+            <div className="sidebar-footer">
+                <p>Powered by 3422</p>
+            </div>
         </aside>
     );
 };
